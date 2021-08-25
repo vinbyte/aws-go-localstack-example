@@ -13,7 +13,7 @@ import (
 )
 
 func receiveSQSMessage() {
-	queue := "test-queue1"
+	queue := "<QUEUE_NAME>"
 	timeout := 5
 	ctx := context.Background()
 
@@ -30,7 +30,7 @@ func receiveSQSMessage() {
 		timeout = 12 * 60 * 60
 	}
 
-	endpointURL := "http://localhost:4566"
+	endpointURL := "<LOCALSTACK_URL>"
 	region := "us-east-1"
 	customResolver := aws.EndpointResolverFunc(func(service, region string) (aws.Endpoint, error) {
 		if endpointURL != "" {
