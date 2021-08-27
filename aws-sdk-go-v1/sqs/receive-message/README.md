@@ -1,4 +1,4 @@
-# Example SQS Localstack using aws-sdk-go-v2
+# Example SQS Localstack using aws-sdk-go-v1
 
 ## Usage 
 
